@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
-      Footer
+    <div className='text-center py-6 text-white'>
+       · Team TecHappen
     </div>
   )
 }

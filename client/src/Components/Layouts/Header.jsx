@@ -9,7 +9,7 @@ const Header = () => {
         Logo
       </div>
 
-      <div className="th-navigation">
+      <div className="th-navigation text-[#ffa500]">
         <Link>Home</Link>
         <Link>Interviews</Link>
         <Link>News</Link>

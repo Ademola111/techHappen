@@ -4,7 +4,7 @@ const Search = () => {
   return (
     <div className='p-6 flex items-center justify-between'>
         <div className='th-search'>
-            <input type="search" className='bg-transparent'/>
+            <input type="search" placeholder='Search Here' className='bg-transparent'/>
             <div>
               <button className='th-search-box'>Search</button>
             </div>
