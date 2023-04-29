@@ -1,6 +1,7 @@
-from .models import Category,News
+from .models import Category,News, Comment
 from rest_framework import serializers
 from django.utils.translation import gettext_lazy as _
+
 class SearchSerializer(serializers.Serializer):
     query = serializers.CharField(max_length=100)
 
@@ -17,3 +18,9 @@ class NewsSerializer(serializers.ModelSerializer):
         model = News
         fields = '__all__'
         read_only_fields = ['slug']
+
+class CommentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Comment
+        fields = '__all__'
+
